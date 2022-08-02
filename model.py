@@ -4,7 +4,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv("Zomato_df_cleaned.csv")
-X = df.drop(columns="rate",axis=1)
+X = df.drop(columns=["rate","Unnamed: 0"],axis=1)
 y = df.rate
 
 
